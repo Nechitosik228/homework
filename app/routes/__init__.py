@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from ..schemas import UserData
+from ..schemas import TaskData
 
 
 
@@ -7,5 +7,5 @@ from ..schemas import UserData
 app = FastAPI()
 
 
-from . import users
+from . import tasks
 

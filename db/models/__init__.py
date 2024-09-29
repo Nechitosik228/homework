@@ -10,7 +10,7 @@ Session = sessionmaker(engine)
 class Base(DeclarativeBase):
     id:Mapped[int] = mapped_column(primary_key=True)
 
-from .users import User
+from .tasks import Task
 
 def up():
     Base.metadata.create_all(engine)
